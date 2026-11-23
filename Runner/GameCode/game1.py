@@ -1,4 +1,4 @@
-import pygame   
+import pygame
 from sys import exit
 
 def Score():

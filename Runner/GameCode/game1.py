@@ -23,14 +23,14 @@ gameNameBg = text_write.render('Welcome to the Runner Game', False , 'Black')
 gameName_rect = gameNameBg.get_rect(center = (248, 50))
 
 
-skyBg = pygame.image.load('GAME/Runner/gameBg/sky.webp').convert()
-ground = pygame.image.load('GAME/Runner/gameBg/groundBg.webp').convert()
+skyBg = pygame.image.load('Runner/GameCode/gameBg/sky.webp').convert()
+ground = pygame.image.load('Runner/GameCode/gameBg/groundBg.webp').convert()
 
-hero = pygame.image.load('GAME/Runner/chBg/hero.png').convert_alpha()
+hero = pygame.image.load('Runner/GameCode/chBg/hero.png').convert_alpha()
 heroSm = pygame.transform.scale(hero, (30, 50))
 heroSm_rect = heroSm.get_rect(bottomleft = (30, 270))
 
-vill = pygame.image.load('GAME/Runner/chBg/vil.png').convert_alpha()
+vill = pygame.image.load('Runner/GameCode/chBg/vil.png').convert_alpha()
 villSm = pygame.transform.scale(vill, (30, 50))
 villSm_rect = villSm.get_rect(bottomleft = (400 , 270))
 
@@ -110,7 +110,7 @@ while True:
         else:
             screen.blit(scoreNum, (210, 260))
         
-        Logo = pygame.image.load("GAME/Runner/chBg/hero.png").convert_alpha()
+        Logo = pygame.image.load("Runner/GameCode/chBg/hero.png").convert_alpha()
         logoSm = pygame.transform.scale(Logo, (50, 80))
         logo1 = logoSm.get_rect(center = (250, 170) )
         screen.blit(logoSm, logo1)
